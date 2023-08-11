@@ -72,7 +72,7 @@ namespace CoreCms.Net.Web.Admin.Controllers
         {
             var jm = new AdminUiCallBack();
             var pageCurrent = Request.Form["page"].FirstOrDefault().ObjectToInt(1);
-            var pageSize = Request.Form["limit"].FirstOrDefault().ObjectToInt(30);
+            var pageSize = Request.Form["limit"].FirstOrDefault().ObjectToInt(20);
             var where = PredicateBuilder.True<CoreCmsBillLading>();
             //获取排序字段
             var orderField = Request.Form["orderField"].FirstOrDefault();
